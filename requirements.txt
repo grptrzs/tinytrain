@@ -1,0 +1,3 @@
+torch>=2.0.0
+numpy>=1.24.0  # needed for dataloader collation
+tqdm>=4.65.0  # progress bars

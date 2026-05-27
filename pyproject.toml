@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "tinytrain"
+version = "0.2.1"
+description = "Dead simple GPU training for PyTorch"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Mikhail S", email = "mikhail@tinytrain.dev"},
+]
+keywords = ["pytorch", "gpu", "training", "deep-learning", "amp", "mixed-precision"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "torchvision>=0.15"]
+
+[project.urls]
+Homepage = "https://github.com/MrMiff/tinytrain"
+Issues = "https://github.com/MrMiff/tinytrain/issues"

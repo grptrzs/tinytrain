@@ -10,7 +10,7 @@ readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.8"
 authors = [
-    {name = "Mikhail S", email = "mikhail@tinytrain.dev"},
+    {name = "Stevanus Young", email = "grptrzs@users.noreply.github.com"},
 ]
 keywords = ["pytorch", "gpu", "training", "deep-learning", "amp", "mixed-precision"]
 classifiers = [

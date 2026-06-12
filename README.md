@@ -70,3 +70,8 @@ See `examples/` for:
 Works. I use it for my own projects. API might change if I find something better.
 
 MIT License.
+
+
+## Troubleshooting
+**Q: Getting OOM errors?**
+A: Reduce batch size or enable gradient checkpointing.

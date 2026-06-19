@@ -23,7 +23,7 @@ That's the whole API. It handles:
 
 ## Why
 
-I was copy-pasting the same training loop iiinto every project. Same AMP setup, same gradient accumulation logic, same checkpoint code. Got tired of it.
+I was copy-pasting the same training loop iiiinto every project. Same AMP setup, same gradient accumulation logic, same checkpoint code. Got tired of it.
 
 ## Consumer GPU stuff
 

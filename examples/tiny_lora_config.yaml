@@ -1,0 +1,35 @@
+# LoRA fine-tuning config for tinytrain
+# Used for quick experiments with small language models
+
+model:
+  name: GPT2Small
+  lora:
+    enabled: true
+    rank: 8
+    alpha: 16
+    target_modules: ["c_attn", "c_proj"]
+    dropout: 0.1
+
+training:
+  epochs: 3
+  batch_size: 8
+  lr: 0.0002
+  warmup_steps: 100
+  weight_decay: 0.01
+  mixed_precision: true
+  gradient_accumulation_steps: 4
+
+data:
+  train_path: ./data/instruction_train.jsonl
+  val_path: ./data/instruction_val.jsonl
+  max_length: 512
+
+checkpointing:
+  save_dir: ./checkpoints/lora_gpt2
+  save_every: 1
+  keep_last: 3
+
+logging:
+  tensorboard: true
+  log_dir: ./logs/lora_gpt2
+  log_every: 10

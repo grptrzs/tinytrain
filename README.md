@@ -60,3 +60,8 @@ checkpointing:
 - **Composable**: Easy to extend with custom callbacks or hooks
 
 See `docs/why_tinytrain.md` for more context.
+
+
+## Hardware Tested
+- AMD RX 7800 XT (RDNA3)
+- AMD RX 7900 XTX (RDNA3)

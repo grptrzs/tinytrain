@@ -65,3 +65,7 @@ See `docs/why_tinytrain.md` for more context.
 ## Hardware Tested
 - AMD RX 7800 XT (RDNA3)
 - AMD RX 7900 XTX (RDNA3)
+
+## Troubleshooting
+**Q: Getting OOM errors?**
+A: Reduce batch size or enable gradient checkpointing.
